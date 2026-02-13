@@ -21,7 +21,7 @@ app.use(cors({
 app.use(express.json());
 
 // UPDATED ROUTE: Use the relative path
-app.use('/api/services', serviceRoutes);
+app.use('/services', serviceRoutes);
 
 app.get('/', (req, res) => {
   res.status(200).json({ message: 'HOME Maintenance API is live' });
