@@ -12,7 +12,7 @@ import {
 const router = express.Router();
 
 
-router.get('/', getServices);
+router.get('/api/services', getServices);
 
 
 export default router;
