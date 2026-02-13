@@ -23,7 +23,7 @@ app.use(cors({
 app.use(express.json());
 
 // 4. Routes
-app.use('/api/services', serviceRoutes);
+app.use('https://mybe.up.railway.app/api/services', serviceRoutes);
 
 // Health check / Root route
 app.get('/', (req, res) => {
