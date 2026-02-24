@@ -19,7 +19,10 @@ const app = express();
 connectDB();
 
 // Middleware
-
+const allowedOrigins = [
+  "http://localhost:5173",          // Local development
+  "https://myfe.up.railway.app"     // Production frontend
+];
 app.use(
   cors({
     origin: function (origin, callback) {
