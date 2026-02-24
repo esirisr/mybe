@@ -19,7 +19,14 @@ const app = express();
 connectDB();
 
 // Middleware
-app.use(cors()); 
+
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 
 // 1. Root Route (Fixes the "Cannot GET /" error in browser)
