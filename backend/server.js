@@ -21,7 +21,9 @@ connectDB();
 // Middleware
 const allowedOrigins = [
   "http://localhost:5173",          // Local development
-  "https://myfe.up.railway.app"     // Production frontend
+  "https://myfe.up.railway.app" ,    // Production frontend
+  "https:/target-fe-production.up.railway.app"
+  
 ];
 app.use(
   cors({
